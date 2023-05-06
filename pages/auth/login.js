@@ -26,7 +26,7 @@ export default function Login() {
       if (!resData.success) {
         setErrors(resData.data);
       } else {
-        Cookies.set("currentUser", JSON.stringify(resData.data),  {sameSite: 'None', secure: true})
+        Cookies.set("currentUser", JSON.stringify(resData.data),  {sameSite: 'None'})
         router.push("/")
       }
     } catch (err) {

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { apiUrl } from '@/config';
 import { useCurrentUser } from '@/lib/auth'
 import { sendRequest } from '@/lib/fetcher'
 
